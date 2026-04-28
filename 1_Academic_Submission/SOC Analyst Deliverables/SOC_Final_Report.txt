@@ -1,0 +1,38 @@
+
+=============================================================================
+ SOC INVESTIGATION REPORT: Slow & Low IoT DDoS Evasion
+=============================================================================
+STUDENT ID: 20234029
+DATE: 2026-04-27
+
+1. EXECUTIVE SUMMARY
+--------------------
+Our analysis confirms that traditional rule-based detection systems are 
+completely ineffective against "Slow & Low" DDoS attacks. These attacks 
+bypass thresholds by maintaining a packet rate (0.17 pkts/s) that mimics 
+normal IoT heartbeat behavior.
+
+2. RULE-BASED DETECTION FAILURE ❌
+---------------------------------
+- Problem: Traditional IDS relies on static thresholds (e.g., rate > 5 pkts/s).
+- Evasion: The attacker maintains a rate significantly lower than the 
+  threshold, rendering the rule invisible.
+- Result: 0% Detection (Recall) or excessive False Positives if thresholds 
+  are lowered too much.
+
+3. AI MODEL SUCCESS ✅
+---------------------
+- Approach: Machine Learning (Random Forest) analyzes multidimensional 
+  statistical patterns rather than single thresholds.
+- Key Identifiers:
+    * 'rolling_rate_mean': Captures temporal consistency of heartbeats.
+    * 'rate_ratio': Identifies asymmetry in source/destination flows.
+    * 'flow_efficiency': Detects inefficient connections held open (Slowloris).
+- Result: >99% Accuracy and Recall.
+
+4. CONCLUSION
+-------------
+To protect IoT infrastructure, the SOC must transition from static rules 
+to behavior-based AI models capable of identifying stealthy deviations 
+in traffic patterns.
+=============================================================================
