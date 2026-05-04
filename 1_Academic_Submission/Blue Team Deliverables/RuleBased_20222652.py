@@ -1,6 +1,6 @@
 """
 =============================================================================
- RULE-BASED DETECTION
+ RULE-BASED DETECTION 20222652
  Course   : AI in Cybersecurity
  Project  : Slow & Low IoT DDoS Evasion Detection
 =============================================================================

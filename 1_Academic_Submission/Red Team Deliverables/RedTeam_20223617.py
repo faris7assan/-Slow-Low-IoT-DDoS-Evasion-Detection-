@@ -1,6 +1,6 @@
 """
 =============================================================================
- RED TEAM - STUDENT ID: 20223617
+ RED TEAM - STUDENT ID: 20223617 Hassan Faris
  Project  : Slow & Low IoT DDoS Evasion Detection
  Role     : Red Team - Professional Threat Emulation (Subnet Diversity & Phasing)
 =============================================================================

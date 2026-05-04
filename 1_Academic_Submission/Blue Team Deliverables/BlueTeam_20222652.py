@@ -1,6 +1,6 @@
 """
 =============================================================================
- BLUE TEAM - DETECTION ENGINE
+ BLUE TEAM - DETECTION ENGINE 20222652
  Course   : AI in Cybersecurity
  Project  : Slow & Low IoT DDoS Evasion Detection
 =============================================================================
@@ -146,6 +146,10 @@ if __name__ == "__main__":
             print(f"    F1-Score  : {metrics['f1']:.4f}")
             print("    Confusion Matrix:")
             print(metrics['cm'])
+            fp = metrics['cm'][0][1]
+            fn = metrics['cm'][1][0]
+            print(f"    False Positives (FP): {fp}")
+            print(f"    False Negatives (FN): {fn}")
         
         # Feature Importance for RF
         importances = results['Random Forest']['model'].feature_importances_
