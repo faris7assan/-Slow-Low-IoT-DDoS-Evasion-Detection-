@@ -22,6 +22,8 @@ Baseline Comparison
 SOC Analysis & Reporting
 ```
 
+See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the Mermaid architecture diagram.
+
 ## Project Roles
 
 ### Red Team
@@ -132,6 +134,10 @@ These figures are retained as the project's academic results and should be inter
 ## Why It Matters
 
 Slow & Low attacks deliberately keep traffic volume relatively low, making simple threshold-based detection less effective. This project explores how behavioral and temporal features can improve detection of stealthier network attacks.
+
+## Security
+
+See [`SECURITY.md`](SECURITY.md) for authorized-use and secret-handling guidance.
 
 ## Author
 
